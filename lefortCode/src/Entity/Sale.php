@@ -42,5 +42,46 @@ class Sale
      */
     private $total;
 
+    public function getId(): ?int
+    {
+        return $this->id;
+    }
+
+    public function getCustomerId(): ?int
+    {
+        return $this->customerId;
+    }
+
+    public function setCustomerId(int $customerId): self
+    {
+        $this->customerId = $customerId;
+
+        return $this;
+    }
+
+    public function getSaleDate(): ?\DateTimeInterface
+    {
+        return $this->saleDate;
+    }
+
+    public function setSaleDate(\DateTimeInterface $saleDate): self
+    {
+        $this->saleDate = $saleDate;
+
+        return $this;
+    }
+
+    public function getTotal(): ?string
+    {
+        return $this->total;
+    }
+
+    public function setTotal(string $total): self
+    {
+        $this->total = $total;
+
+        return $this;
+    }
+
 
 }

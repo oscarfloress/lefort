@@ -49,5 +49,58 @@ class SoldItem
      */
     private $price;
 
+    public function getId(): ?int
+    {
+        return $this->id;
+    }
+
+    public function getSaleId(): ?int
+    {
+        return $this->saleId;
+    }
+
+    public function setSaleId(int $saleId): self
+    {
+        $this->saleId = $saleId;
+
+        return $this;
+    }
+
+    public function getDescription(): ?string
+    {
+        return $this->description;
+    }
+
+    public function setDescription(?string $description): self
+    {
+        $this->description = $description;
+
+        return $this;
+    }
+
+    public function getDepartment(): ?string
+    {
+        return $this->department;
+    }
+
+    public function setDepartment(?string $department): self
+    {
+        $this->department = $department;
+
+        return $this;
+    }
+
+    public function getPrice(): ?string
+    {
+        return $this->price;
+    }
+
+    public function setPrice(string $price): self
+    {
+        $this->price = $price;
+
+        return $this;
+    }
+
 
 }
